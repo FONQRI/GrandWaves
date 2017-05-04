@@ -1,0 +1,429 @@
+@font-face {
+    font-family: "IRANSansWeb";
+    src: url('/../fonts/iransansweb.ttf') /* TTF file for CSS3 browsers */
+}
+* {
+    direction: rtl;
+    font-family: "IRANSansWeb";
+}
+
+.main{
+  min-height: 100vh;
+}
+.navbar-brand{
+    color: #fff !important;
+}
+.navOptions {
+    padding-bottom: 0px;
+    margin-top: 7px !important;
+    font-size: 16px;
+}
+.navbar{
+    position: fixed;
+}
+.nav-link {
+    color: #222 !important;
+
+}
+
+a:hover
+  {
+    text-decoration:none;
+    cursor:pointer;
+    color:#42A5F5 !important;
+   }
+
+.fa-home{
+    padding-left: 5px;
+}
+.homeBody{
+
+width:100%;
+    height: 100vh;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.divs{
+    width: 100%; background-color: #fff;
+    padding:20px;
+}
+
+.adminImg{
+    /*margin: 20px;*/
+text-align: center;
+}
+
+.mainId{
+    padding:20px;
+    float: right;
+    font-size: 25px;
+}
+.imgProduct{
+
+    padding: 6px;
+}
+
+/*test *****************************************************/
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 50px 20px;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    overflow: hidden;
+    padding: 0.5em 0;
+    background-color: transparent;
+}
+
+.hovereffect h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+}
+
+.hovereffect:hover h2:after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+    color: #222 !important;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+    font-size: 25px;
+}
+.hovereffect:hover a{
+    text-decoration: none;
+}
+.hovereffect:hover a, .hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.maindiv{
+    width: 100%;
+    background-color:#fff;
+    overflow-x: hidden;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    min-height: 69vh;
+}
+
+.homeIcon{
+    padding-right: 15px;
+}
+.menuIcon {
+    width: 50px !important;
+}
+.navbar-brand{
+    padding-top: 0 !important;
+    float: right;
+}
+.footerContent {
+text-align: center;
+background-color:#000000;
+padding-top: 20px;
+padding-bottom: 20px;
+border-bottom-style: solid;
+  border-top-style: solid;
+border-color: #9C27B0;
+width: 100%;
+
+}
+
+.footerTop {
+  background-color:#000000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-color: #2196F3;
+  border-top-style: solid;
+}
+
+.newsLetters {
+    text-align: center;
+}
+
+#emailLabel {
+    text-align: center;
+    float: center;
+    font-size: 25px;
+
+    }
+.navbar {
+        -webkit-box-shadow: 0 2px 2px 0px #333;
+        -moz-box-shadow: 0 8px 6px -6px #333;
+        box-shadow:  0 0px 2px 0px grey;
+        padding-left: 10px;
+}
+.shareIcons{
+            font-size: 55px;
+            margin-left: 50px;
+            margin-right: 50px;
+              color:#2196F3 !important;
+}
+
+.footerBottom{
+
+  text-align: center;
+  background-color:#000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  border-color: #4CAF50;
+  color: #2196F3;
+}
+.active{
+  background-color: transparent;
+  border-bottom-style: solid;
+  border-color: #304FFE;
+}
+
+
+/***********************************************commingsoon css ************************************/
+
+.bgimg {
+    background-image: url('/img/blogCommingSoon.jpg');
+height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.commingsoonText{
+  color:#2196F3;
+  font-size: 50px;}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+/***********************************************commingsoon css end************************************/
+.formLabel{
+  color:#2196F3;
+}
+
+.underLineHr{
+  border-top-style: solid;
+  border-color:#F44336;
+text-align: center;
+width: 40%;
+}
+
+.box-shadow{
+    box-shadow: 0 2px 2px 0 #222, 0 0 0 1px #333;
+  background-color: #222;
+  padding: 5px;
+}
+.aboutimg{
+  padding-top: 30px;
+}
+#order{
+  padding-bottom: 20px;
+}
+.textColor{
+  color:#5a5a5a;
+}
+
+.navbar-inverse{
+  background-color: #333;
+}
+.centerText{
+  text-align:center;
+
+}
+
+
+.lowLinkParent{
+  padding-bottom: 20px;
+}
+.modal-title{
+  padding-right: 20px;
+}
+.modal-footer{
+  text-align: center;
+}
+.modal-title{
+  text-align: center;
+}
+
+.testResponsive{
+    max-height:100%;
+    max-width:100%;
+    display:block;
+    margin:0 auto;
+}
+.nav-link{
+  color: #fff !important;
+}
+.notFound{
+  height: 100vh;
+  width: 100%;
+  background-color: #e3e3e3  ;
+  color:green;
+  font-size: 55px;
+text-align: center;
+padding-top: 30vh;
+}
+#banner{
+  width: 100%;
+
+}
+.bannerImg{
+  width: 100%;
+max-height: 400px;
+}
+.card{
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  margin: 25px;
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  text-align: center;
+  border-top-style: solid;
+  border-color: #2196F3;
+}
+.mainSectionsHeaders{
+
+}
+.scrollspy{
+  z-index: 1364;
+  margin-top: 40vh !important;
+
+}
+.scrollspy ul li a{
+  background-color: #2196F3;
+  color: #fff;
+
+}
+.aboutItems{
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.aboutLinkCon{
+  min-height: 100vh;
+  padding-bottom: 100px;
+  border-bottom-style: solid;
+  border-color: #333;
+  padding-top: 100px;
+  float: none;
+}
+.card ul li{
+  text-align: right;
+}
+.mainServiceProgrammer{
+  color:#01579B ;
+}
+.mainServicegame{
+  color: #B71C1C;
+}
+.mainServiceGraphic{
+  color: #33691E;
+}
+.mainServiceProgrammer:hover{
+  color: #03A9F4 !important;
+}
+.mainServicegame:hover{
+  color: #F44336 !important;
+}
+.mainServiceGraphic:hover{
+  color: #8BC34A !important;
+}
+
+
+.mainServiceProgrammer section{
+border-color:  #03A9F4;
+}
+.mainServicegame section{
+  border-color: #F44336;
+}
+.mainServiceGraphic section{
+  border-color: #8BC34A;
+}
+.articleListTitle{
+  text-align: center;
+}
+.articleLisBody{
+  text-align:justify;
+}
+.btn-block:hover{
+  color: #333 !important;
+}
+h2{
+  text-align: center;
+}
