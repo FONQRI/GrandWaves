@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::get('/blog', 'ArticlesController@index');
 Route::get('/blog/create', 'ArticlesController@create');
 Route::get('/blog/{id}', 'ArticlesController@show');
+Route::post('/blog/create', 'ArticlesController@insertPost');
 
 
 
