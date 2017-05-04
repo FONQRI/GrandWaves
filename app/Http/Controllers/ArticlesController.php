@@ -16,9 +16,32 @@ class ArticlesController extends Controller
       }
     return view('blog/post',compact('article'));
   }
-
   function create(){
-
     return view('blog/create');
+  }
+  function insertPost(Request $request){
+//      $messages = [
+//          'name.required' => 'a',
+//          'email.required' => 'a',
+//          'email.email' => 'a',
+//          'phonenumber.numeric' => 'a',
+//          'phonenumber.regex' => 'a',
+//          'phonenumber.required' => 'a',
+//          'description.required' => 'a',
+//          'description.max' => 'a',
+//          'subject.required' => 'a',
+//      ];
+//      $rules = [
+//          'name' => 'required',
+//          'email' => 'required|email',
+//          'description' => 'required|max:600',
+//          'phonenumber' => 'required|numeric|regex:/^(0)[0-9]{10}$/',
+//          'subject' => 'required|not_in:-1',
+//      ];
+      $postTitle=$request["postTitle"];
+      $postContent=$request["postContent"];
+
+      return redirect()->back()->withInput();
+//      return view('blog/create');
   }
 }
